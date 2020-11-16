@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&display=swap");
+
+body {
+  background: #545b63;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.feedback {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: url("../img/build.png") no-repeat;
+  background-size: 50%;
+  background-position: right;
+}
+
+header {
+  padding-top: 3.444rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6.111rem;
+}
+
+.menu {
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1.778rem;
+  border: 1px solid #fafafa;
+}
+
+.toggle::after {
+  content: "";
+  display: block;
+  width: 1.778rem;
+  border: 1px solid #fafafa;
+  position: absolute;
+  top: 5px;
+}
+
+.logo {
+  margin-left: 1.3rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.556rem;
+  color: #fafafa;
+  letter-spacing: 0.02rem;
+}
+
+.feedback h1 {
+  font-size: 2.667rem;
+  color: #fafafa;
+  letter-spacing: 0.007em;
+  margin-bottom: 3.556rem;
+}
+
+.feedback h1 > span {
+  display: block;
+  font-size: 1.167rem;
+  opacity: 0.57;
+  letter-spacing: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+}
+
+.terms input {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+}
+
+.terms label {
+  font-size: 0.556rem;
+  line-height: 0.722rem;
+  color: #fafafa;
+  opacity: 0.53;
+  width: 16.444rem;
+}
+
+form #title {
+  letter-spacing: 0.03em;
+  color: #fafafa;
+}
+
+.form-control {
+  width: 26rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+form-control:focus {
+  box-shadow: #55aaee;
+}
+
+.task_info {
+  display: flex;
+}
+
+.task_info input:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.task_info input {
+  width: 8rem;
+}
+
+.btn {
+  height: 3.5rem;
+  width: 11rem;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+
+.btn-primary:disabled {
+  background-color: #858c91;
+  border-color: #858c91;
+}
