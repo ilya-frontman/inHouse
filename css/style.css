@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&display=swap");
 
 body {
-  background: #545b63;
+  background-color: #545b63;
+  background: linear-gradient(
+    129deg,
+    rgba(84, 91, 99, 1) 0%,
+    rgb(62, 68, 75) 100%
+  );
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -10,6 +15,7 @@ body {
 .feedback {
   padding: 0;
   margin: 0;
+  position: relative;
   height: 100vh;
   background: url("../img/build.png") no-repeat;
   background-size: 50%;
@@ -129,7 +135,7 @@ form {
   opacity: 1;
 }
 
-.checkbox .checker {
+.checker {
   display: none;
 }
 
@@ -139,13 +145,53 @@ form {
   font-weight: 600;
 }
 
+.radio {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  max-width: 26rem;
+}
+
+.radio_item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90px;
+  height: 100px;
+  background-color: #3e4245;
+  box-shadow: inset 0px 0px 27px rgba(0, 0, 0, 0.25);
+}
+
+.radio_item svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.current {
+  background-color: #fff;
+  box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.23);
+}
+
+.current svg path {
+  fill: #454545;
+}
+
+.radio_item:not(:last-child) {
+  margin-right: 1rem;
+}
+
 form #title {
   letter-spacing: 0.03em;
   color: #fafafa;
+  margin-bottom: 1rem;
 }
 
 .form-control {
-  width: 26rem;
+  max-width: 26rem;
   height: 3rem;
   border-radius: 0.1rem;
   margin-bottom: 1rem;
@@ -176,7 +222,7 @@ form #title {
   border-radius: 0.1rem;
 }
 
-.btn-primary:disabled {
+#submit:disabled {
   background-color: #858c91;
   border-color: #858c91;
 }
@@ -185,4 +231,9 @@ form #title {
   background-color: #55aaee;
   border-color: #55aaee;
   transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #4594d4;
+  border-color: #4594d4;
 }
