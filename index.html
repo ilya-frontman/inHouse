@@ -10,47 +10,48 @@
 </head>
 <body>
   <article class="feedback">
-    <main class="container">
-      <div class="col-lg-5">
-        <header class="col">
-          <section class="nav-mobile">
-            <span class="toggle"></span>
-            <nav class="menu">
-              <a href="#">Каталог</a>
-              <a href="#">Проекты</a>
-              <a href="#">Услуги</a>
-              <a href="#">Оставить заявку</a>
-            </nav>
-          </section>
-          <span class="logo">inHouse</span>
-        </header>
-        <section class="task">
-          <h1>Оставить заявку<span>Установить окна в</span></h1>
-          <form action="#" method="POST">
-            <span id="title">Коттедж</span>
-            <section class="radio">
-              <input type="radio" name="task_type" value="house" checked>
-              <input type="radio" name="task_type" value="flat">
-              <input type="radio" name="task_type" value="balcony">
-              <input type="radio" name="task_type" value="plan">
-            </section>
-            <input type="text" class="form-control" name="username" placeholder="Иванов Иван Иванович">
-            <input type="tel" class="form-control" name="phone" placeholder="+7 ( 998 ) 989  99  89">
-            <section class="task_info">
-              <input type="text" class="form-control" name="weight" placeholder="Ширина, мм">
-              <input type="text" class="form-control" name="height" placeholder="Высота, мм">
-              <input type="text" class="form-control" name="number" placeholder="Кол-во">
-            </section>
-            <section class="terms">
-              <input class="form-control" id="terms" type="checkbox" name="terms">
-              <label for="terms">Ознакомлен с
-                <a href="#" target="_blank">политикой конфиденциальности</a> Согласен на обработку персональных данных
-              </label>
-            </section>
-            <input class="btn btn-primary" type="submit" value="Отправить" disabled>
-          </form>
+    <main class="container col-lg-8">
+      <header>
+        <section class="nav-mobile">
+          <span class="toggle"></span>
+          <nav class="menu">
+            <a href="#">Каталог</a>
+            <a href="#">Проекты</a>
+            <a href="#">Услуги</a>
+            <a href="#">Оставить заявку</a>
+          </nav>
         </section>
-      </div>
+        <span class="logo">inHouse</span>
+      </header>
+      <section class="task">
+        <h1>Оставить заявку<span>Установить окна в</span></h1>
+        <form action="#" method="POST">
+          <span id="title">Коттедж</span>
+          <section class="radio">
+            <input type="radio" name="task_type" value="house" checked>
+            <input type="radio" name="task_type" value="flat">
+            <input type="radio" name="task_type" value="balcony">
+            <input type="radio" name="task_type" value="plan">
+          </section>
+          <input type="text" class="form-control" name="username" placeholder="Иванов Иван Иванович">
+          <input type="tel" class="form-control" name="phone" placeholder="+7 ( 998 ) 989  99  89">
+          <section class="task_info">
+            <input type="text" class="form-control" name="weight" placeholder="Ширина, мм">
+            <input type="text" class="form-control" name="height" placeholder="Высота, мм">
+            <input type="text" class="form-control" name="number" placeholder="Кол-во">
+          </section>
+          <label class="checkbox">
+            <input type="checkbox" name="terms" class="checker">
+            <span class="custom"></span>
+            <span class="label">
+              Ознакомлен с
+              <a href="#" target="_blank">политикой конфиденциальности</a> 
+              Согласен на обработку персональных данных
+            </span>
+          </label>
+          <input class="btn btn-primary" type="submit" value="Отправить" disabled>
+        </form>
+      </section>
     </main>
   </article>
 </body>

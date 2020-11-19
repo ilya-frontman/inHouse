@@ -74,23 +74,69 @@ form {
   flex-direction: column;
 }
 
-.terms {
+.checkbox {
   display: flex;
+  position: relative;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
-.terms input {
+.checkbox .custom {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-right: 8px;
+  opacity: 0.53;
   width: 32px;
   height: 32px;
-  background: transparent;
+  border: 0.12rem solid #b8b8b8;
+  border-radius: 0.1rem;
+  transition: 0.2s;
 }
 
-.terms label {
+.checkbox .label {
+  display: block;
   font-size: 0.556rem;
-  line-height: 0.722rem;
+  line-height: 0.8rem;
   color: #fafafa;
-  opacity: 0.53;
   width: 16.444rem;
+  margin: 0;
+  opacity: 0.53;
+}
+
+.checkbox .custom::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/check.svg") no-repeat;
+}
+
+.checker:checked ~ .custom {
+  border-color: #55aaee;
+  background-color: #55aaee;
+  opacity: 1;
+}
+
+.checker:checked ~ .label a {
+  color: #55aaee;
+}
+
+.checker:checked ~ .label {
+  opacity: 1;
+}
+
+.checkbox .checker {
+  display: none;
+}
+
+.checkbox .label a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 form #title {
@@ -101,11 +147,13 @@ form #title {
 .form-control {
   width: 26rem;
   height: 3rem;
+  border-radius: 0.1rem;
   margin-bottom: 1rem;
 }
 
-form-control:focus {
+.form-control:focus {
   box-shadow: #55aaee;
+  color: #282828;
 }
 
 .task_info {
@@ -125,7 +173,7 @@ form-control:focus {
   width: 11rem;
   left: 0px;
   top: 0px;
-  border-radius: 0px;
+  border-radius: 0.1rem;
 }
 
 .btn-primary:disabled {
