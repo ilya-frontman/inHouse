@@ -152,7 +152,7 @@ form #title {
 }
 
 .form-control:focus {
-  box-shadow: #55aaee;
+  box-shadow: none;
   color: #282828;
 }
 
@@ -170,7 +170,7 @@ form #title {
 
 .btn {
   height: 3.5rem;
-  width: 11rem;
+  width: 12rem;
   left: 0px;
   top: 0px;
   border-radius: 0.1rem;
@@ -179,4 +179,10 @@ form #title {
 .btn-primary:disabled {
   background-color: #858c91;
   border-color: #858c91;
+}
+
+.btn-primary {
+  background-color: #55aaee;
+  border-color: #55aaee;
+  transition: 0.2s;
 }
