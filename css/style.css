@@ -4,7 +4,7 @@ body {
   background-color: #545b63;
   background: linear-gradient(
     129deg,
-    rgba(84, 91, 99, 1) 0%,
+    rgb(84, 91, 99) 100%,
     rgb(62, 68, 75) 100%
   );
   font-family: "Montserrat", sans-serif;
@@ -31,13 +31,14 @@ body {
 .cover {
   background: url("../img/build.png") no-repeat;
   background-size: cover;
+  display: block;
 }
 
 header {
   padding-top: 3.444rem;
   display: flex;
   align-items: center;
-  margin-bottom: 6.111rem;
+  margin-bottom: 6rem;
 }
 
 .menu {
@@ -76,7 +77,6 @@ header {
   font-size: 2.667rem;
   color: #fafafa;
   letter-spacing: 0.007rem;
-  margin-bottom: 3.556rem;
 }
 
 .feedback h1 > span {
@@ -94,6 +94,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  padding: 4rem 0;
 }
 
 .checkbox {
@@ -177,6 +178,7 @@ form {
   height: 100px;
   background-color: #3e4245;
   box-shadow: inset 0px 0px 27px rgba(0, 0, 0, 0.25);
+  border-radius: 0.1rem;
 }
 
 .radio_item svg {
@@ -276,3 +278,156 @@ form #title {
     max-width: 7.85rem;
   }
 }
+
+@media (max-height: 900px) {
+  .feedback h1 {
+    font-size: 2.3rem;
+    color: #fafafa;
+    letter-spacing: 0.007rem;
+  }
+}
+
+@media (max-height: 800px) {
+  .feedback h1 {
+    font-size: 2.1rem;
+  }
+  header {
+    padding-top: 3.444rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.6rem;
+  }
+}
+
+@media (max-height: 1024px) {
+  header {
+    margin-bottom: 9rem;
+    padding-top: 3.4rem;
+  }
+  .feedback h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-height: 840px) {
+  header {
+    margin-bottom: 2rem;
+  }
+  .feedback h1 {
+    font-size: 1.6rem;
+  }
+  form {
+    padding: 1.8rem 0;
+  }
+}
+
+@media (max-height: 768px) {
+  .feedback h1 {
+    font-size: 1.8rem;
+  }
+  form {
+    padding: 2.7rem 0;
+  }
+  header {
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-height: 736px) {
+  header {
+    margin-bottom: 1.7rem;
+  }
+  form {
+    padding: 1.8rem 0;
+  }
+  .feedback h1 > span {
+    display: block;
+    font-size: 1rem;
+    opacity: 0.57;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 840px) {
+  header {
+    padding-top: 1.4rem;
+  }
+  .feedback h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 3.4rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 667px) {
+  header {
+    padding-top: 1.4rem;
+  }
+  .feedback h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .task {
+    max-width: 23.5rem;
+  }
+  .feedback h1 {
+    font-size: 1.7rem;
+  }
+  .task_info {
+    flex-direction: column;
+  }
+  .task_info input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding-top: 1.4rem;
+  }
+  .task {
+    max-width: 21.5rem;
+  }
+  .feedback h1 {
+    font-size: 1.7rem;
+  }
+  .task_info {
+    flex-direction: column;
+  }
+  .task_info input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .feedback h1 {
+    font-size: 1.4rem;
+  }
+  .task {
+    max-width: 20.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .task {
+    max-width: 18.3rem;
+  }
+}
+
+/* @media (max-height: 1366px) and (max-width: 1024px) {
+  .cover {
+    display: none;
+  }
+  .feedback {
+    grid-template: "content";
+  }
+  header {
+    margin-bottom: 12rem;
+  }
+} */
