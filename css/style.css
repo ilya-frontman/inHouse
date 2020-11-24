@@ -385,6 +385,9 @@ form #title {
   .task_info input {
     max-width: 100%;
   }
+  .btn {
+    width: 100%;
+  }
 }
 
 @media (max-width: 375px) {
