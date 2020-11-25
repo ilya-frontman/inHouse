@@ -7,7 +7,7 @@ const height = document.querySelector('.height');
 const number = document.querySelector('.number');
 
 const phone_mask = Maska.create(tel, {
-  mask: '+# (###) ### ## ##'
+  mask: '+7 (###) ### ## ##'
 });
 
 const user_mask = Maska.create(user, {
